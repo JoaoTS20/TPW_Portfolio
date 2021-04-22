@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Authors By Publisher</title>
+</head>
+{% block content %}
+<body>
+<H1> H) Publishers: {{ publisher }}</H1>
+<br>
+{% for author in authors %}
+    <p>{{ author }}</p>
+    {% endfor %}
+<a></a>
+</body>
+{% endblock %}
+</html>

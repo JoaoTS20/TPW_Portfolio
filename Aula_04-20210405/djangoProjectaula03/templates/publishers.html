@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Publishers</title>
+</head>
+{% block content %}
+<body>
+<H1>E) Publishers</H1>
+
+<br>
+{% for publisher in publishers %}
+    <a href="{{ publisher }}">{{ publisher }}</a> -> <a href="authors/{{ publisher }}">Authors</a> <br>
+    {% endfor %}
+
+</body>
+</html>
+{% endblock %}

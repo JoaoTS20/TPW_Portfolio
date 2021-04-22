@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Author List Pesquisa</title>
+</head>
+<body>
+{% block content %}
+
+    <p> Search by: <strong>{{ query }}</strong></p>
+    {% if boks %}
+    <p>Found {{ boks|length }} Author{{ boks|pluralize }}.</p>
+    <ul>
+        {% for author in boks %}
+            <li> {{ author.name }}  ->  {{ author.email }}</li>
+        {% endfor %}
+    </ul>
+    {% else %}
+        <p> Not found any result.</p>
+    {% endif %}
+
+{% endblock %}
+
+</body>
+</html>

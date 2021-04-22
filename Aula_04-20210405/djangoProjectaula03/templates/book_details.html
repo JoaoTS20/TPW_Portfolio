@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Detalhes</title>
+</head>
+{% block content %}
+
+<body>
+<H1> B) Detalhes </H1>
+<p> Title: {{ book.title }}</p>
+<p> Date: {{ book.date }}</p>
+<p> Publisher: {{ book.publisher }}</p>
+<p> Authors: <br>{% for author in book.authors.all  %}
+    {{ author }}<br>
+{% endfor %}</p>
+
+</body>
+{% endblock %}
+</html>

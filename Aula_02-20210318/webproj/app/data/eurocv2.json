@@ -1,0 +1,82 @@
+{
+  "eurocv": {
+    "foto":  "foto2.jpg",
+    "desiredEmploy": "Quimico",
+    "personalInfo": {
+      "name": {
+        "lastname": "Rui",
+        "firstname": "Moreira"
+      },
+      "address": {
+        "street": "Santa Maria",
+        "cp": "4520-840",
+        "local": "Sinta",
+        "country": "Portugal"
+      },
+      "contact": {
+        "phone": {
+          "countryprefix": "351",
+          "number": "912345678"
+        },
+        "fax": {
+          "countryprefix": "351",
+          "number": "24234234"
+        },
+        "email": [
+          {
+            "type": "Professional",
+            "value": "rui@ua.pt"
+          },
+          {
+            "type": "Personal",
+            "value": "rui@portugalmail.pt"
+          }
+        ]
+      },
+      "nacionality": "Portuguese",
+      "birthdate": {
+        "day": "07",
+        "month": "March",
+        "year": "2000"
+      },
+      "gender": "Male"
+    },
+    "workexperience": {
+      "position": {
+        "dates": {
+          "start": {
+            "month": "Julho",
+            "year": "2019"
+          },
+          "end": {
+            "month": "Setembro",
+            "year": "2020"
+          }
+        },
+        "occupation":  "Test Covid Analyst",
+        "activities": {
+          "activity": [
+            {
+              "designation": "TestLab",
+              "time": "1 year"
+            }
+          ]
+        },
+        "employer": {
+          "name": "UniLabs",
+          "address": {
+            "street": "Av. ",
+            "cp": "4200",
+            "local": "Aveiro",
+            "country": "Portugal"
+          },
+          "contact": {
+            "www": "www.unilabs.pt",
+            "email": "uni-labs@unilabs.pt"
+          }
+        },
+        "businessSector": "Lab Technology "
+      }
+    }
+  }
+}

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Books By Author</title>
+</head>
+{% block content %}
+<body>
+<H1> G) Livros: {{ author }}</H1>
+<br>
+{% for book in books %}
+    <p>{{ book }}</p>
+    {% endfor %}
+<a></a>
+</body>
+{% endblock %}
+</html>
