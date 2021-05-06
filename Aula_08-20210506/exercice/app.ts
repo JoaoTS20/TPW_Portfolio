@@ -1,3 +1,4 @@
+/**
 class Animal {
     static nAnimals: number=0;
     habitat: string;
@@ -106,6 +107,10 @@ class Cat extends Feline{
         return super.show()  +" Number of Cats: " + Cat.nCats + " Name: " + this.name;
     }
 }
+**/
+import{Reptile} from "./Reptile";
+import{Dog} from "./Dog";
+import {Cat} from "./Cat";
 
 console.log("Reptile:")
 let reptile = new Reptile("Lago")
