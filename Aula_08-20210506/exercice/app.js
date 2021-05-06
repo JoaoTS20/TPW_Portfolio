@@ -56,7 +56,7 @@ var Canine = /** @class */ (function (_super) {
         return _this;
     }
     Canine.prototype.show = function () {
-        return _super.prototype.show.call(this) + " Race: " + this.race;
+        return _super.prototype.show.call(this) + " Number of Canine: " + Canine.nCanines + " Race: " + this.race;
     };
     Canine.nCanines = 0;
     return Canine;
@@ -72,6 +72,9 @@ var Dog = /** @class */ (function (_super) {
     Dog.prototype.talk = function () {
         return _super.prototype.talk.call(this) + this.bark;
     };
+    Dog.prototype.show = function () {
+        return _super.prototype.show.call(this) + " Number of Dogs: " + Dog.nDogs;
+    };
     Dog.nDogs = 0;
     return Dog;
 }(Canine));
@@ -84,7 +87,7 @@ var Feline = /** @class */ (function (_super) {
         return _this;
     }
     Feline.prototype.show = function () {
-        return _super.prototype.show.call(this) + " Family: " + this.familiy;
+        return _super.prototype.show.call(this) + " Number of Feline: " + Feline.nFelines + " Family: " + this.familiy;
     };
     Feline.nFelines = 0;
     return Feline;
@@ -102,7 +105,7 @@ var Cat = /** @class */ (function (_super) {
         return _super.prototype.talk.call(this) + this.meow;
     };
     Cat.prototype.show = function () {
-        return _super.prototype.show.call(this) + " Name: " + this.name;
+        return _super.prototype.show.call(this) + " Number of Cats: " + Cat.nCats + " Name: " + this.name;
     };
     Cat.nCats = 0;
     return Cat;

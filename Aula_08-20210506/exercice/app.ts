@@ -47,7 +47,7 @@ class Canine extends Mammal{
         Canine.nCanines++;
     }
     show() {
-        return super.show() + " Race: " + this.race;
+        return super.show() + " Number of Canine: " + Canine.nCanines + " Race: " + this.race;
     }
 
 }
@@ -66,6 +66,10 @@ class Dog extends Canine{
         return super.talk() + this.bark;
     }
 
+    show(){
+       return super.show() + " Number of Dogs: " + Dog.nDogs;
+    }
+
 
 }
 
@@ -80,7 +84,7 @@ class Feline extends Mammal{
         Feline.nFelines++;
     }
     show() {
-        return super.show() + " Family: " + this.familiy;
+        return super.show() +  " Number of Feline: " + Feline.nFelines + " Family: " + this.familiy;
     }
 }
 
@@ -99,7 +103,7 @@ class Cat extends Feline{
         return super.talk() + this.meow;
     }
     show() {
-        return super.show()  + " Name: " + this.name;
+        return super.show()  +" Number of Cats: " + Cat.nCats + " Name: " + this.name;
     }
 }
 
