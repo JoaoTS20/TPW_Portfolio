@@ -1,0 +1,21 @@
+<div *ngIf="publisher">
+  <h2>Information on {{publisher.name | uppercase}}</h2>
+  <div>
+    <label>Num:
+      <input [ngModel]="publisher.num" readonly>
+    </label>
+  </div>
+  <div>
+    <label>Name:
+      <input [(ngModel)]="publisher.name" placeholder="name">
+    </label>
+  </div>
+  <div>
+    <label>WebSite:
+      <input [(ngModel)]="publisher.website" placeholder="website">
+    </label>
+  </div>
+  <br>
+  <button (click)="goBack()">Go Back</button>
+</div>
+
