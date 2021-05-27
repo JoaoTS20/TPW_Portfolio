@@ -1,0 +1,23 @@
+<br>
+<h3> Some Authors </h3>
+<div class="grid grid-pad">
+ <a *ngFor="let author of authors" class="col-1-4" routerLink="/authordetails/{{author.id}}">
+   <div class="module author">
+     <h4>{{author.name}}</h4>
+   </div>
+ </a>
+</div>
+<br>
+<h3> Some Publishers and Some Books </h3>
+<div class="grid grid-pad">
+    <a *ngFor="let publisher of publishers" class="col-1-4" routerLink="/publisherdetails/{{publisher.num}}">
+      <div class="module author">
+        <h4>{{publisher.name}}</h4>
+      </div>
+    </a>
+    <a *ngFor="let book of books" class="col-1-4" routerLink="/bookdetails/{{book.num}}">
+      <div class="module author">
+        <h4>{{book.title}}</h4>
+      </div>
+    </a>
+</div>
